@@ -1,0 +1,24 @@
+* {
+  text-align: center;
+}
+h1, h2 {
+  color: #0075d6;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #FAEBD7;
+}
+
+p {
+  color: #228FCF;
+  font-family: sans-serif;
+  /*border: 1px solid blue;*/
+  line-height: 1;
+  text-indent: 2em;
+  text-align: left;
+}
+
+#email {
+  font-style: italic;
+}
