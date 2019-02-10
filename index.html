@@ -1,27 +1,72 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
-  <meta charset = "utf-8">
-  <title>CS 498 MP0 Part 1</title>
-  <link href="style_sheet.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    body {
+        top: 0;
+        margin: 0;
+        height: 2000px;
+    }
+    
+    #top-nav {
+        padding: 5px;
+        width: 100%;
+        background-color: dimgrey;
+        overflow: hidden;
+    }  
+    
+    #top-nav a {
+        display: block;
+        float: right;
+        width: 10%;
+        height: 15%;
+        padding: 12px 0px;
+        margin: 0;
+        text-align: center;
+        text-decoration: none;
+        
+        font-size: 150%;
+        color: white;   
+        font-family: Helvetica;
+        
+        transition: all 1s;
+    }
+    
+    #top-nav a:hover {
+        background: blue;
+    }
+    
+    #top-nav .home {
+        float: left;
+        width: 30%;
+        text-align: left;
+        //font-size: 200%;
+    }
+</style>
 </head>
-  
-<body>
-  <img src = "https://i.imgur.com/B1z5wtW.png" alt = "My Profile Picture">
-  <h1>Mingchao Zhang</h1>
-  <h2 id = "email">
-    mz5@illinois.edu
-  </h2>
-  <h2>
-    <a href="https://github.com/mingchao-zhang">GitHub</a>
-  </h2>
-  <p>I am a third year undergraduate majoring Math and Computer Science at the University of Illinois at Urbana-Champaign. I am interested in Machine Learning and Computer System. My favorite computer system in Linux because the user interface is very simple.</p>
-  <p>I like eating and reading novels. My favorite food is Japanese ramen, and my favorite novel is To Kill a Mocking Bird.</p>
-  <!--- random stuff-->
-  <a href="tennis_game.html">Tennis Game</a>
-  <!--- random stuff-->
 
+<body>
+<!-- Top Navigation Bar-->
+<header>
+    <div id="top-nav">
+        <a href="#">Contact</a>
+        <a href="#">Blog</a>
+        <a href="#">Portfolio</a>
+        <a href="#">About</a>
+        <a class="home" href="#">Mingchao Zhang</a>
+</div>
+</header>
+
+
+lorem50
 </body>
 </html>
 
-  
+
+<!-- References:
+Top bar: https://www.w3schools.com/howto/howto_css_icon_bar.asp
+
+
+-->
