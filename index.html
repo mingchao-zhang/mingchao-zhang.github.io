@@ -8,26 +8,27 @@
         top: 0;
         margin: 0;
         height: 2000px;
-        overflow: visible;
     }
     
-    #top-nav {
+    #header {
+        display: block;
+    }
+    
+    #top_nav {
+        display: block;
+        top: 0px;
         height: 50px;
-        padding: 0px;
         width: 100%;
         background-color: dimgrey;
-        overflow: visible;
-        //position: -webkit-sticky;
-        //position: sticky;
-        //top: 0;
+        overflow: hidden;
     }  
     
-    #top-nav a {
+    #top_nav a {
         display: block;
         float: right;
         width: 10%;
         height: 30px;
-        padding: 10px 0px;
+        padding: 10px 10px;
         margin: 0;
         text-align: center;
         text-decoration: none;
@@ -39,47 +40,81 @@
         transition: all 1s;
     }
     
-    #top-nav a:hover {
+    #top_nav a:hover {
         background: blue;
     }
     
-    #top-nav .home {
+    #top_nav .home {
         float: left;
         width: 30%;
         text-align: left;
-        //font-size: 200%;
     }
-    
-    /* Testing */
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .content {
+        display: block;
+    }
 
 </style>
 </head>
 
 <body>
 <!-- Top Navigation Bar-->
-<header>
-    <div id="top-nav">
+<div id="header">
+    <div id="top_nav" class="sticky">
         <a href="#">Contact</a>
         <a href="#">Blog</a>
         <a href="#">Portfolio</a>
         <a href="#">About</a>
         <a class="home" href="#">Mingchao Zhang</a>
+    </div>  
+</div>
+
+
+<div class="content">
+   <p>
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat consequuntur aliquam necessitatibus consequatur eveniet atque eaque tempore aut vero soluta rerum, nihil iusto totam laboriosam expedita quisquam deserunt sed aspernatur, ut non nobis. Veniam quia voluptatem architecto dolorem doloribus ipsam labore, esse libero earum. Temporibus rerum nisi accusantium ipsum. Nesciunt. 
+    </p> 
 </div>
 
 <!--testing-->
-<div class="sticky">I will stick to the screen when you reach my scroll position</div>
-</header>
 
-<p>
-   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat consequuntur aliquam necessitatibus consequatur eveniet atque eaque tempore aut vero soluta rerum, nihil iusto totam laboriosam expedita quisquam deserunt sed aspernatur, ut non nobis. Veniam quia voluptatem architecto dolorem doloribus ipsam labore, esse libero earum. Temporibus rerum nisi accusantium ipsum. Nesciunt. 
-</p>
+<!--------------------------------------------->
+<script>
+// Sticky bar
+window.onscroll = function() {
 
+};
+
+function stick() {
+    var top_bar = document.getElementById("top_nav");
+    //window.pageYOffset returns the number of pixels the window has been scolled vertically
+    console.log(window.pageYOffset, top_bar.offsetTop);
+    //top_bar.classList.add("sticky");
+    /*
+    if (window.pageYOffset >= top_bar.offsetTop) {
+        console.log("add");
+        top_bar.classList.add("sticky")
+    } 
+    else {
+        console.log("remove");
+        top_bar.classList.remove("sticky");
+    }
+    */
+}
+</script>
 </body>
 </html>
 
 
 <!-- References:
 Top bar: https://www.w3schools.com/howto/howto_css_icon_bar.asp
-
+Sticky bar: 
+https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
 
 -->
