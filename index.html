@@ -2,119 +2,139 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-<style>
-    body {
-        top: 0;
-        margin: 0;
-        height: 2000px;
-    }
-    
-    #header {
-        display: block;
-    }
-    
-    #top_nav {
-        display: block;
-        top: 0px;
-        height: 50px;
-        width: 100%;
-        background-color: dimgrey;
-        overflow: hidden;
-    }  
-    
-    #top_nav a {
-        display: block;
-        float: right;
-        width: 10%;
-        height: 30px;
-        padding: 10px 10px;
-        margin: 0;
-        text-align: center;
-        text-decoration: none;
-        
-        font-size: 150%;
-        color: white;   
-        font-family: Helvetica;
-        
-        transition: all 1s;
-    }
-    
-    #top_nav a:hover {
-        background: blue;
-    }
-    
-    #top_nav .home {
-        float: left;
-        width: 30%;
-        text-align: left;
-    }
-
-    .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-
-    .content {
-        display: block;
-    }
-
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mingchao Zhang</title>
+    <!-- my main css-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--font awesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
 </head>
 
 <body>
-<!-- Top Navigation Bar-->
-<div id="header">
-    <div id="top_nav" class="sticky">
-        <a href="#">Contact</a>
-        <a href="#">Blog</a>
-        <a href="#">Portfolio</a>
-        <a href="#">About</a>
-        <a class="home" href="#">Mingchao Zhang</a>
-    </div>  
-</div>
+<!-- preloader; animation before loading is completed-->
+<!-- end preloader-->
 
+<!-- header -->
+<header class="header">
+   <!-- nav bar-->
+   <nav>
+       <ul>
+           <li><a href="#">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#">Projects</a></li>
+           <li><a href="#food">Blog</a></li>
+       </ul>
+   </nav>
+   <!-- end of nav bar-->
+    <!-- banner -->
+    <div class="banner">
+        <h1 class="banner_text">
+            Hello. I'm Mingchao
+        </h1>
+        <div class="banner_icons">
+            <a href="https://www.facebook.com/profile.php?id=100009491484668" class="banner_icon_item">
+                <i class="fab fa-facebook fa-fw"></i>
+            </a>
+            <a href="https://github.com/mingchao-zhang" class="banner_icon_item">
+                <i class="fab fa-github  fa-fw"></i>
+            </a>
+            <a href="#" class="banner_icon_item">
+                <i class="fab fa-google-plus fa-fw"></i>
+            </a>
+            <a href="https://www.instagram.com/mingchao__zhang/" class="banner_icon_item">
+                <i class="fab fa-instagram fa-fw"></i>
+            </a>
+        </div>
+        <div class="resume_container">
+            <h2><a href="files/curriculum-vitae.pdf" target="_blank">RESUME</a></h2>
+        </div>
+    </div>
+    <!-- end of banner-->
+    <!-- video -->
+    <div class="video_container">
+        <video class="video_item" autoplay muted loop>
+            <source src="video/timelapse.mp4" type="video/mp4">
+            <source src="video/timelapse.ogv" type="video/ogv">
+            <source src="video/timelapse.webm" type="video/webm">
+            Bad Brower.
+        </video>
+    </div>
+    <!-- end of video -->
+</header>
+<!-- end of header-->
 
-<div class="content">
-   <p>
-   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat consequuntur aliquam necessitatibus consequatur eveniet atque eaque tempore aut vero soluta rerum, nihil iusto totam laboriosam expedita quisquam deserunt sed aspernatur, ut non nobis. Veniam quia voluptatem architecto dolorem doloribus ipsam labore, esse libero earum. Temporibus rerum nisi accusantium ipsum. Nesciunt. 
-    </p> 
-</div>
+<!-- about -->
+<section id="about" style="display: none">
+    <p> dddLorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dignissimos, perspiciatis, omnis voluptatem fugit minus soluta fugiat, earum id deserunt pariatur sapiente iste tenetur consectetur perferendis nisi quisquam. Itaque, quas deleniti in. Pariatur veniam, ut dolores blanditiis nulla molestiae earum sunt, assumenda cupiditate quam non eaque eum reiciendis natus repellendus sequi. Fugiat, aut! dddOfficia cumque culpa nobis aut adipisci ex illum, vel repellendus esse optio. Repellat praesentium doloribus fugit obcaecati provident repellendus necessitatibus deleniti. Repellat tenetur nam possimus voluptatibus, id quisquam harum, unde itaque doloribus nemo, quis illo, totam quasi. Aliquam cumque mollitia labore, cupiditate architecto molestiae! Iusto cupiditate, mollitia.</p>
+</section>
+<!-- end of about -->
 
-<!--testing-->
+<!-- food -->
+<section id="food">
+    <div class="food_title">
+        <div class="food_title_text">
+            <h1>Food</h1>
+        </div>
+        <div class="food_title_underline"></div>
+    </div>
 
-<!--------------------------------------------->
-<script>
-// Sticky bar
-window.onscroll = function() {
+    <div class="food_container"> 
+        <div class="food_item">
+            <img src="image/food/Canva_Bagoong_Rice_and_Green_Mangoes.jpg" alt="food">
+            <div class="food_item_text">
+                Bagoong Rice and Green Mangoes
+            </div>
+        </div>
+        <div class="food_item">
+            <img src="image/food/Canva - Burger with Fresh Vegetables.jpg" alt="food">
+            <div class="food_item_text">
+                Burger with Fresh Vegetables
+            </div>
+        </div>
+        <div class="food_item">
+            <img src="image/food/Canva - Coffee and Biscuits.jpg" alt="food">
+            <div class="food_item_text">
+                Coffee and Biscuits.jpg
+            </div>
+        </div>
+        <div class="food_item">
+            <img src="image/food/Canva - Grilled Sandwich.jpg" alt="food">
+            <div class="food_item_text">
+                Grilled Sandwich
+            </div>
+        </div>
+        <div class="food_item">
+            <img src="image/food/Canva%20-%20Stir%20Fried%20Rice%20with%20Chorizo.jpg" alt="food">
+            <div class="food_item_text">
+                Stir Fried Rice with Chorizo
+            </div>
+        </div>
+        <div class="food_item">
+            <img src="image/food/Canva%20-%20Tuna%20Sandwich.jpg" alt="food">
+            <div class="food_item_text">
+                Tuna Sandwich
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+<!-- end of food -->
 
-};
-
-function stick() {
-    var top_bar = document.getElementById("top_nav");
-    //window.pageYOffset returns the number of pixels the window has been scolled vertically
-    console.log(window.pageYOffset, top_bar.offsetTop);
-    //top_bar.classList.add("sticky");
-    /*
-    if (window.pageYOffset >= top_bar.offsetTop) {
-        console.log("add");
-        top_bar.classList.add("sticky")
-    } 
-    else {
-        console.log("remove");
-        top_bar.classList.remove("sticky");
-    }
-    */
-}
-</script>
 </body>
 </html>
 
 
-<!-- References:
-Top bar: https://www.w3schools.com/howto/howto_css_icon_bar.asp
-Sticky bar: 
-https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
 
+
+<!-- Source:
+* Tutorial on video: Coding Addict on Youtube
+* background video: https://videos.pexels.com/videos/beautiful-timelapse-of-the-night-sky-with-reflections-in-a-lake-857251
+* fontawesome: https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself
+* color: https://coolors.co/
+* loading-icon: https://loading.io/
+* video converter (.mp4 to .webm and .ogv): https://converterpoint.com/
+* google-font:      https://fonts.google.com/specimen/Noto+Sans 
+https://fonts.googleapis.com/css?family=Lato
+* Food pictures: https://www.canva.com/photos/misc/MABwhrn1KZE-tuna-sandwich/?query=*#
 -->
