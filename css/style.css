@@ -47,7 +47,6 @@ body {
     grid-template-columns: 80%;
     justify-content: center;
     align-items: center;
-    border: solid orange;
 }
 
 /*-----------------------------------------*/
@@ -202,8 +201,8 @@ nav ul li a:hover {
 }
 /*-----------------------------------------*/
 #food {
+    border-top: solid salmon;
     padding-top: var(--navbar_small_height);
-    border: solid pink;
     background: white;
     z-index: 0;
 }
@@ -350,7 +349,143 @@ nav ul li a:hover {
     min-height: 100vh;
 }
 /*-----------------------------------------*/
+/* nature */
+#nature {
+    padding-top: var(--navbar_small_height);
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.nature_container {
+    position: relative;
+    margin: 0px;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nature_front_content {
+    overflow: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.nature_front_title {
+    padding-top: 5px;
+    width: 100%;
+    text-align: center;
+    color: var(--watermelon_red);
+}
+
+.nature_front_image {
+    display: none;
+    transition: opacity 1s linear;
+}
+
+.nature_front_image img {
+    transition: opacity 1s linear;
+    margin: 20px auto; 
+    max-width: 80vh;
+    max-height: 80vh;
+    border-radius: 15px;
+    z-index: 100;
+}
+/*
+#nature_front_image4 img {
+    display: block;
+    opacity: 1;
+    transition: inherit;
+}
+*/
+
+
+
+.arrow {
+    transition: all 1s ease-in-out;
+    color: var(--light_blue);
+    font-size: 4rem;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.arrow:hover, .arrow:focus {
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+/* copied from CodeFluent on Youtube */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#nature_arrow_left {
+    justify-content: right;
+}
+
+#nature_arrow_right {
+    justify-content: left;
+}
+
+.nature_hidden {
+    display: none;
+}
+
+.nature_item {
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+.nature_item_title {
+    text-align: center;
+    padding: 5px;
+}
+
+.nature_item img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
+}
 /*-----------------------------------------*/
+/* footer */
+.footer {
+    background-color: var(--tea_green);
+    border-top: solid salmon;
+    padding-top: 20px;
+    height: 80px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
 /*-----------------------------------------*/
 /*-----------------------------------------*/
 /*-----------------------------------------*/
