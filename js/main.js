@@ -5,7 +5,7 @@
 var modal = document.getElementsByClassName("modal")[0];
 var modal_image_container = document.getElementsByClassName("modal_image_container")[0];
 var modal_button = document.getElementsByClassName("modal_button")[0];
-var modal_pics = document.querySelectorAll('.food_item, .modal_pic_item')
+var modal_pics = document.querySelectorAll(".food_item, .modal_pic_item");
 
 function modal_click_outside(evt) {
     if (evt.target === modal) {
@@ -51,6 +51,7 @@ function resize_navbar(evt) {
     }
 }
 window.addEventListener("scroll", resize_navbar);
+
 //---------------------------------------------------
 // scrolling progress indicator
 var progress_bar = document.getElementById("progress_bar");
@@ -62,8 +63,44 @@ function fill_progress_bar() {
 }
 window.addEventListener("scroll", fill_progress_bar);
 
+// Carousel
+const images = document.querySelectorAll(".nature_item img");
+const front_image = document.querySelector(".nature_front_image");
+const arrow_left = document.getElementById("nature_arrow_left");
+const arrow_right = document.getElementById("nature_arrow_right");
+var image_srcs = [];
+var carousel_index = 0;
 
+for (var i = 0; i < images.length; i++) {
+    console.log(document.location.hostname);
+    image_srcs.push(images[i].src);
+}
 
+function show_left_pic() {
+    console.log("left clicked")
+    if (carousel_index == 0) {
+        carousel_index = image_srcs.length - 1;
+    }
+    else {
+        carousel_index--;
+    }
+    console.log(image_srcs[carousel_index]);
+    front_image.style.content = `url(${image_srcs[carousel_index]})`;
+}
 
-// Reference: https://stackoverflow.com/questions/40956717/how-to-addeventlistener-to-multiple-elements-in-a-single-line
-// Reference
+function show_right_pic() {
+    console.log("left clicked")
+    if (carousel_index == image_srcs.length - 1) {
+        carousel_index = 0;
+    }
+    else {
+        carousel_index++;
+    }
+    console.log(image_srcs[carousel_index]);
+    front_image.style.content = `url(${image_srcs[carousel_index]})`;
+}
+
+arrow_left.addEventListener("click", show_left_pic);
+arrow_right.addEventListener("click", show_right_pic);
+
+//Reference: how to add the image source in the css file: https://stackoverflow.com/questions/10829675/how-to-put-an-image-in-div-with-css
