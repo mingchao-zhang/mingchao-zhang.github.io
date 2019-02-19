@@ -147,7 +147,7 @@ nav ul li a:hover {
 }
 
 #progress_bar {
-    width: 10%;
+    width: 0%;
     height: inherit;
     background: rgba(0, 0, 0, 0.6);
 }
