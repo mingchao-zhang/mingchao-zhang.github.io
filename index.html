@@ -16,7 +16,8 @@
 <!-- end preloader-->
 
 <!-- header -->
-<header class="header">
+<!--  style="display: none"; -->
+<header class="header" style="display: none";>
    <!-- nav bar-->
    <nav>
        <ul>
@@ -70,7 +71,7 @@
 <!-- end of header-->
 
 <!-- about -->
-<section id="about">
+<section id="about" style="display: none;">
     <div class="section_title">
         <div class="section_title_text">
             <h1>--About--</h1>
@@ -81,16 +82,61 @@
 </section>
 <!-- end of about -->
 
-<!-- food -->
-<section id="food">
-    <div class="modal">
-        <div class="modal_content">
-            <div class="modal_button">
-                <i class="fas fa-window-close"></i>
+<!-- nature -->
+<section id="nature">
+        <div class="section_title">
+                <div class="section_title_text">
+                    <h1>--Nature--</h1>
+                </div>
+                <div class="section_title_underline"></div>
+        </div>
+        <div class="nature_container">
+            <div class="nature_front_title">
+                <h2>Spring</h2>
             </div>
-            <h1>Hello? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem doloribus error velit necessitatibus perferendis non, hic, fugiat nostrum a inventore beatae dolorum, reiciendis quis. Unde ipsum, adipisci. Saepe, ullam quasi.</h1>
-       </div>
-   </div>
+            <div class="nature_front_image">
+                <img src="image/nature/spring.jpg">
+            </div>
+
+            <div class="nature_hidden">
+                <div class="nature_item">
+                    <div class="nature_item_title">
+                        <h2>Spring</h2>
+                    </div>
+                    
+                            <img src="image/nature/spring.jpg">
+                    
+                </div>
+                <div class="nature_item">
+                    <div class="nature_item_title">
+                        <h2>Summer</h2>
+                    </div>
+    
+                            <img src="image/nature/summer.jpg">
+
+                </div>
+                <div class="nature_item">
+                    <div class="nature_item_title">
+                        <h2>Fall</h2>
+                    </div>
+                    
+                            <img src="image/nature/fall.jpg">
+                    
+                </div>
+                <div class="nature_item">
+                    <div class="nature_item_title">
+                        <h2>Winter</h2>
+                    </div>
+                    
+                            <img src="image/nature/winter.jpg">
+                    
+                </div>
+            </div>
+        </div>
+</section>
+<!-- end of nature -->
+<!-- food -->
+<section id="food" >
     <div class="section_title">
         <div class="section_title_text">
             <h1>--Food--</h1>
@@ -136,6 +182,16 @@
             </div>
         </div>
     </div>
+    <div class="modal">
+        <div class="modal_content">
+            <div class="modal_header">
+                    <div class="modal_button">
+                        <i class="fas fa-window-close"></i>
+                    </div>
+            </div>
+            <div class="modal_image_container"></div>
+       </div>
+   </div>
 </section>
 <!-- end of food -->
 <script src="js/main.js"></script>
