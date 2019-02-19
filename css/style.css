@@ -196,7 +196,9 @@ nav ul li a:hover {
 
 /*-----------------------------------------*/
 #about {
-    font-size: 10px;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
 }
 /*-----------------------------------------*/
 #food {
@@ -299,14 +301,26 @@ nav ul li a:hover {
     width: 80vh;
 }
 
+.modal_header {
+    display: grid;
+    justify-content: right;
+    height: 10vh;
+    width: 100%;
+}
+
 .modal_button {
     display: block;
-    height: 10vh;
+    height: 100%;
     color: rgba(255, 255, 255, 0.9);
     font-size: 2rem;
     text-align: right;
     transition: all 0.5s;
     margin: 0;
+}
+
+.modal_button:hover, .modal_button:focus {
+    font-size: 3rem;
+    cursor: pointer;
 }
 
 .modal_image_container {
@@ -317,11 +331,6 @@ nav ul li a:hover {
     border-radius: 15px;
     background-image: url("../image/food/Canva\ -\ Burger\ with\ Fresh\ Vegetables.jpg");
     background-size: cover;
-}
-
-.modal_button:hover, .modal_button:focus {
-    font-size: 3rem;
-    cursor: pointer;
 }
 
 /*-----------------------------------------*/
