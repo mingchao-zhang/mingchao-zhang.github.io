@@ -3,6 +3,7 @@
 //---------------------------------------------------
 // Modal
 var modal = document.getElementsByClassName("modal")[0];
+var modal_image_container = document.getElementsByClassName("modal_image_container")[0];
 var modal_button = document.getElementsByClassName("modal_button")[0];
 var modal_pics = document.querySelectorAll('.food_item, .modal_pic_item')
 
@@ -22,7 +23,7 @@ function display_modal() {
 }
 
 function modal_show_pic(evt) {
-    modal.appendChild(evt.target);
+    modal_image_container.style.backgroundImage = `url(${evt.target.src})`;
     display_modal();
 }
 
@@ -59,7 +60,6 @@ function fill_progress_bar() {
     var scrolled_percentage = (window.scrollY / total_scroll_length) * 100;
     progress_bar.style.width = scrolled_percentage + "%";
 }
-
 window.addEventListener("scroll", fill_progress_bar);
 
 
