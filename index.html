@@ -8,15 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
     <!--font awesome-->
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
-    <!-- my main javascript-->
 </head>
 
 <body>
-<!-- preloader; animation before loading is completed-->
-<!-- end preloader-->
-
 <!-- header -->
-<!--  style="display: none"; -->
 <header class="header">
    <!-- nav bar-->
    <nav>
@@ -25,6 +20,7 @@
            <li><a href="#about">About</a></li>
            <li><a href="#nature">Nature</a></li>
            <li><a href="#food">Food</a></li>
+           <li><a href="#footer">Contact</a></li>
        </ul>
        <div class="progress_bar_container">
             <div id="progress_bar">
@@ -44,7 +40,7 @@
             <a href="https://github.com/mingchao-zhang" class="banner_icon_item">
                 <i class="fab fa-github  fa-fw"></i>
             </a>
-            <a href="#" class="banner_icon_item">
+            <a href="mailto:mz5@illinois.edu" class="banner_icon_item">
                     <i class="far fa-envelope"></i>
             </a>
             <a href="https://www.instagram.com/mingchao__zhang/" class="banner_icon_item">
@@ -57,7 +53,6 @@
     </div>
     <!-- end of banner-->
     <!-- video -->
-    <!-- style="display: none;" -->
     <div class="video_container" >
         <video class="video_item" autoplay muted loop>
             <source src="video/moving_color.mp4" type="video/mp4">
@@ -84,21 +79,19 @@
 
 <!-- nature -->
 <section id="nature">
-        <div class="section_title">
-                <div class="section_title_text">
-                    <h1>--Nature--</h1>
-                </div>
-                <div class="section_title_underline"></div>
+    <div class="section_title">
+            <div class="section_title_text">
+                <h1>--Nature--</h1>
+            </div>
+            <div class="section_title_underline"></div>
+    </div>
+    <div class="nature_container">
+        <div class="arrow" id="nature_arrow_left">
+            <i class="fas fa-arrow-left"></i>
         </div>
-        <div class="nature_container">
-            <div class="arrow" id="nature_arrow_left">
-                <i class="fas fa-arrow-left"></i>
-            </div>
 
-            <div class="nature_front_content">
-            <div class="nature_front_title">
-                
-            </div>
+        <div class="nature_front_content">
+            <div class="nature_front_title"></div>
             <div class="nature_front_image fade" id="nature_front_image1">
                 <img src="image/nature/spring.jpg">
             </div>
@@ -111,47 +104,12 @@
             <div class="nature_front_image fade" id="nature_front_image4">
                 <img src="image/nature/winter.jpg">
             </div>
-            </div>
-
-            <div class="arrow" id="nature_arrow_right">
-                <i class="fas fa-arrow-right"></i>
-            </div>
-
-            <div class="nature_hidden">
-                <div class="nature_item">
-                    <div class="nature_item_title">
-                        <h2>Spring</h2>
-                    </div>
-                    
-                            <img src="image/nature/spring.jpg">
-                    
-                </div>
-                <div class="nature_item">
-                    <div class="nature_item_title">
-                        <h2>Summer</h2>
-                    </div>
-    
-                            <img src="image/nature/summer.jpg">
-
-                </div>
-                <div class="nature_item">
-                    <div class="nature_item_title">
-                        <h2>Fall</h2>
-                    </div>
-                    
-                            <img src="image/nature/fall.jpg">
-                    
-                </div>
-                <div class="nature_item">
-                    <div class="nature_item_title">
-                        <h2>Winter</h2>
-                    </div>
-                    
-                            <img src="image/nature/winter.jpg">
-                    
-                </div>
-            </div>
         </div>
+
+        <div class="arrow" id="nature_arrow_right">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+    </div>
 </section>
 <!-- end of nature -->
 <!-- food -->
@@ -221,7 +179,7 @@
         <a href="https://github.com/mingchao-zhang" class="banner_icon_item">
             <i class="fab fa-github  fa-fw"></i>
         </a>
-        <a href="#" class="banner_icon_item">
+        <a href="mailto:mz5@illinois.edu" class="banner_icon_item">
                 <i class="far fa-envelope"></i>
         </a>
         <a href="https://www.instagram.com/mingchao__zhang/" class="banner_icon_item">
@@ -229,6 +187,7 @@
         </a>
     </div>
 </section>
+<!-- my main javascript-->
 <script src="js/main.js"></script>
 </body>
 </html>
