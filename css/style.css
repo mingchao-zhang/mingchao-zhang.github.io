@@ -280,7 +280,9 @@ nav ul li a:hover {
 }
 
 .modal {
+    /*
     display: none;
+    */
     position: fixed;
     left: 0;
     top: 0;
@@ -292,18 +294,30 @@ nav ul li a:hover {
 
 .modal_content {
     padding: 0;
-    top: 20%;
-    margin: 70px auto;
-    width: 80%;
-    background: white;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+    top: 0;
+    margin: 30px auto;
+    height: 90vh;
+    width: 80vh;
 }
 
 .modal_button {
-    color: red;
+    display: block;
+    height: 10vh;
+    color: rgba(255, 255, 255, 0.9);
     font-size: 2rem;
-    float: right;
+    text-align: right;
     transition: all 0.5s;
+    margin: 0;
+}
+
+.modal_image_container {
+    display: block;
+    height: 70vh;
+    width: 70vh;
+    margin: auto;
+    border-radius: 15px;
+    background-image: url("../image/food/Canva\ -\ Burger\ with\ Fresh\ Vegetables.jpg");
+    background-size: cover;
 }
 
 .modal_button:hover, .modal_button:focus {
