@@ -98,7 +98,7 @@ nav {
     width: 100vw;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 99;
     background-color: rgba(255, 255, 255, 0.5);
     height: var(--navbar_big_height);
     line-height: var(--navbar_big_height);
@@ -244,6 +244,7 @@ nav ul li a:hover {
 
 .food_item:hover img {
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .food_item_text {
@@ -280,16 +281,14 @@ nav ul li a:hover {
 }
 
 .modal {
-    /*
     display: none;
-    */
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 99;
+    z-index: 100;
 }
 
 .modal_content {
@@ -324,6 +323,7 @@ nav ul li a:hover {
     font-size: 3rem;
     cursor: pointer;
 }
+
 /*-----------------------------------------*/
 /* about */
 #about {
