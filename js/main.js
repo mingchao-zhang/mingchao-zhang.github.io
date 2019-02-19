@@ -41,7 +41,7 @@ window.addEventListener("click", modal_click_outside);
 //resize the navbar
 var navbar = document.querySelector("nav");
 
-function resize_navbar() {
+function resize_navbar(evt) {
     if (window.pageYOffset >= (window.innerHeight - 60)) {
         navbar.classList.add("small_nav");
     }
@@ -49,11 +49,21 @@ function resize_navbar() {
         navbar.classList.remove("small_nav");
     }
 }
-window.addEventListener("mousemove", resize_navbar);
 window.addEventListener("scroll", resize_navbar);
+//---------------------------------------------------
+// scrolling progress indicator
+var progress_bar = document.getElementById("progress_bar");
+function fill_progress_bar() {
+    console.log("hello");
+    const total_scroll_length = document.documentElement.scrollHeight - window.innerHeight;
+    var scrolled_percentage = (window.scrollY / total_scroll_length) * 100;
+    progress_bar.style.width = scrolled_percentage + "%";
+}
 
+window.addEventListener("scroll", fill_progress_bar);
 
 
 
 
 // Reference: https://stackoverflow.com/questions/40956717/how-to-addeventlistener-to-multiple-elements-in-a-single-line
+// Reference
