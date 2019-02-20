@@ -9,6 +9,10 @@
 :root {
     --navbar_big_height: 80px;
     --navbar_small_height: 60px;
+    --navbar_big_font_size: 1.3rem;
+    --navbar_small_font_size: 1rem;
+    --navbar_white: rgba(255, 255, 255, 0.5);
+    --navbar_black: rgba(0, 0, 0, 0.8);
     --light_blue: #9BC4CB;
     --grayish_white: #DDDDDD;
     --dark_blue: #19647E;
@@ -92,7 +96,6 @@ body {
 /*-----------------------------------------*/
 /* nav bar */
 nav {
-
     position: fixed;
     width: 100vw;
     top: 0;
@@ -102,14 +105,18 @@ nav {
     height: var(--navbar_big_height);
     line-height: var(--navbar_big_height);
     transition: all 1s;
+    font-size: 1.3rem;
 }
 
 nav ul {
+    padding: 5px;
     text-align: right;
     list-style-type: none;
+    background-color: var(--navbar_white);
 }
 
 nav ul li {
+
     display: inline-block;
     width: 10%;
 }
@@ -119,8 +126,9 @@ nav ul li a {
     text-align: center;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.8);
+    background-color: var(--navbar_white);
     transition: transform 0.5s;
-    border-radius: 30%;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
@@ -131,6 +139,12 @@ nav ul li a:hover {
 .small_nav {
     height: var(--narbar_small_height);
     line-height: var(--navbar_small_height);
+    font-size: var(--narbar_small_font_size);
+}
+
+.anchor_link_highlight {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.9);
 }
 /*
 .big_nav {
@@ -205,9 +219,12 @@ nav ul li a:hover {
     padding-top: var(--navbar_small_height);
     background: white;
     z-index: 0;
+    height: 100vh;
+    overflow: auto;
 }
 
 .section_title {    
+    padding-top: 10px;
     color:var(--melon_pink);
     font-size: 40px;
     text-align: center;
@@ -476,15 +493,18 @@ nav ul li a:hover {
 }
 /*-----------------------------------------*/
 /* footer */
-.footer {
+#footer {
     background-color: var(--tea_green);
     border-top: solid salmon;
     padding-top: 20px;
-    height: 80px;
+    height: 200px;
     margin-top: 20px;
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 /*-----------------------------------------*/
 /*-----------------------------------------*/
