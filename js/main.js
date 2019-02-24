@@ -93,7 +93,6 @@ var footer_top = food_bot + 1;
 var footer_bot = food_top + food_height;
 
     for (var i = 0; i < nav_anchor_links.length; i++) {
-        console.log(nav_anchor_links[i].offsetTop);
         change_obj_color(nav_anchor_links[i], nav_white, nav_black);
     }
     if (home_top <= window.scrollY &&
@@ -116,7 +115,6 @@ var footer_bot = food_top + food_height;
     else {
         change_obj_color(nav_anchor_links[4], nav_black, nav_white);
     }
-    console.log(food_top + navbar.clientHeight - 1, window.scrollY, food_top, food_bot);
 }
 
 
@@ -125,7 +123,6 @@ window.addEventListener("scroll", highlight_anchor_link);
 
 */
 
-console.log(home_height, about_height, nature_height, food_height, footer_height);
 //---------------------------------------------------
 // Carousel
 var front_images = document.getElementsByClassName("nature_front_image");
