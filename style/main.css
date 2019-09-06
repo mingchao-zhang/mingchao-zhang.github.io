@@ -208,14 +208,11 @@ nav ul li a:hover {
     border-radius: 30%;
 }
 
+
+
+
 /*-----------------------------------------*/
-#about {
-    font-size: 30px;
-    text-align: center;
-    padding: 10px;
-}
-/*-----------------------------------------*/
-#food {
+#project {
     border-top: solid salmon;
     padding-top: var(--navbar_small_height);
     background: white;
@@ -226,7 +223,8 @@ nav ul li a:hover {
 
 .section_title {    
     padding-top: 10px;
-    color:var(--melon_pink);
+    color: #AED6F1;
+    /* color:var(--watermelon_red); */
     font-size: 40px;
     text-align: center;
     justify-content: center;
@@ -239,13 +237,13 @@ nav ul li a:hover {
     margin: 2px auto;
 }
 
-.food_container {
+.project_container {
     width: 70vw;
     margin: 0 auto;
     
 }
 
-.food_item {
+.project_item {
     border-radius: 20px;
     position: relative;
     margin: 20px;
@@ -253,7 +251,7 @@ nav ul li a:hover {
 }
 
 
-.food_item img {
+.project_item img {
     display: block;
     border-radius: 20px;
     width: 100%;
@@ -261,12 +259,12 @@ nav ul li a:hover {
     transition: opacity 2s;
 }
 
-.food_item:hover img {
+.project_item:hover img {
     opacity: 0.5;
     cursor: pointer;
 }
 
-.food_item_text {
+.project_item_text {
     width: 100%;
     position: absolute;
     bottom: 1%;
@@ -281,19 +279,19 @@ nav ul li a:hover {
     transition: opacity 2s;
 }
 
-.food_item:hover .food_item_text {
+.project_item:hover .project_item_text {
     opacity: 1;
 }
 
 @media screen and (min-width: 900px) {
-    .food_container {
+    .project_container {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .food_container {
+    .project_container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -350,22 +348,7 @@ nav ul li a:hover {
     background-size: cover;
 }
 
-/*-----------------------------------------*/
-/* about */
-#about {
-    padding-top: var(--navbar_small_height);
-    background-image: url("../image/background/color_triangle.jpg"); /* fallback */
-    /*
-    background: linear-gradient(var(--vista_blue), var(--melon_pink)), transparent;
-    background-image:  url("../image/background/color_triangle.jpg");
-    */
-    background-size: cover; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
 
-    min-height: 100vh;
-}
 /*-----------------------------------------*/
 /* nature */
 #nature {

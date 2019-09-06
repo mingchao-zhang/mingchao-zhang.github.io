@@ -1,0 +1,53 @@
+#about {
+    padding-top: var(--navbar_small_height);
+    /* background-image: url("../image/background/pencils.jpg");  */
+    background: linear-gradient(var(--tea_green), var(--vista_blue)), transparent;
+
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+    /* overflow: auto; */
+}
+
+
+.profile_pic_and_introduction {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-direction: column; */
+}
+
+.profile_pic {
+    width: 20vw;
+    margin: 0 auto;
+    position: relative;
+    margin: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+
+.profile_pic img {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+    transition: opacity 2s;
+}
+
+.pic_intro_dummy {
+    width: 10vw;
+}
+
+
+.introduction {
+    width: 40vw;
+    padding: 10px;
+    color: black;
+    font-size: 0.5em;
+    /* border-color: var(--vista_blue);
+    border: solid 2px; */
+    text-align: left;
+}
