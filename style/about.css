@@ -1,7 +1,8 @@
 #about {
+    border-top: solid salmon;
     padding-top: var(--navbar_small_height);
     /* background-image: url("../image/background/pencils.jpg");  */
-    background: linear-gradient(var(--tea_green), var(--vista_blue)), transparent;
+    background: linear-gradient(var(--tea_green), var(--vista_blue));
 
     background-size: cover; 
     background-attachment: fixed;
@@ -9,15 +10,13 @@
     background-repeat: no-repeat;
 
     min-height: 100vh;
-    /* overflow: auto; */
 }
 
 
 .profile_pic_and_introduction {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    /* flex-direction: column; */
+    align-items: center;
 }
 
 .profile_pic {
@@ -43,11 +42,10 @@
 
 
 .introduction {
+    align-self: flex-start;
     width: 40vw;
     padding: 10px;
     color: black;
     font-size: 0.5em;
-    /* border-color: var(--vista_blue);
-    border: solid 2px; */
     text-align: left;
 }

@@ -5,7 +5,7 @@
 var modal = document.getElementsByClassName("modal")[0];
 var modal_image_container = document.getElementsByClassName("modal_image_container")[0];
 var modal_button = document.getElementsByClassName("modal_button")[0];
-var modal_pics = document.querySelectorAll(".food_item, .modal_pic_item");
+var modal_pics = document.querySelectorAll(".project_item, .modal_pic_item");
 
 function modal_click_outside(evt) {
     if (evt.target === modal) {
@@ -31,14 +31,12 @@ for (var i = 0; i < modal_pics.length; i++) {
     modal_pics[i].addEventListener("click", modal_show_pic);
 }
 
-//modal_button.onclick = hide_modal();
-modal_button.addEventListener("click", hide_modal);
-window.addEventListener("click", modal_click_outside);
+// modal_button.addEventListener("click", hide_modal);
+// window.addEventListener("click", modal_click_outside);
 
 //---------------------------------------------------
 //resize the navbar
 var navbar = document.querySelector("nav");
-
 function resize_navbar(evt) {
     if (window.pageYOffset >= (window.innerHeight - 60)) {
         navbar.classList.add("small_nav");
@@ -62,8 +60,8 @@ window.addEventListener("scroll", fill_progress_bar);
 // hightlight anchor links
 var home_height = document.getElementById("home").offsetHeight;
 var about_height = document.getElementById("about").offsetHeight;
-var nature_height = document.getElementById("nature").offsetHeight;
-var food_height = document.getElementById("food").offsetHeight;
+// var nature_height = document.getElementById("nature").offsetHeight;
+var project_height = document.getElementById("project").offsetHeight;
 var footer_height = document.getElementById("footer").offsetHeight;
 
 
@@ -85,12 +83,12 @@ function highlight_anchor_link() {
 var home_bot = home_height - navbar.clientHeight - 1;
 var about_top = home_bot + 1;
 var about_bot = about_top + about_height - 1;
-var nature_top = about_bot + 1;
-var nature_bot = nature_top + nature_height - 1;
-var food_top = nature_bot + 1;
-var food_bot = food_top + food_height - 1;
-var footer_top = food_bot + 1;
-var footer_bot = food_top + food_height;
+// var nature_top = about_bot + 1;
+// var nature_bot = nature_top + nature_height - 1;
+var project_top = about_bot + 1;
+var project_bot = project_top + project_height - 1;
+var footer_top = project_bot + 1;
+var footer_bot = project_top + project_height;
 
     for (var i = 0; i < nav_anchor_links.length; i++) {
         change_obj_color(nav_anchor_links[i], nav_white, nav_black);
@@ -104,16 +102,16 @@ var footer_bot = food_top + food_height;
         window.scrollY <= about_bot) {
         change_obj_color(nav_anchor_links[1], nav_black, nav_white);
     }
-    else if (nature_top <= window.scrollY &&
-        window.scrollY <= nature_bot) {
+    // else if (nature_top <= window.scrollY &&
+    //     window.scrollY <= nature_bot) {
+    //     change_obj_color(nav_anchor_links[2], nav_black, nav_white);
+    // }
+    else if (project_top <= window.scrollY &&
+        window.scrollY <= document.documentElement.scrollHeight - window.innerHeight - navbar.clientHeight) {
         change_obj_color(nav_anchor_links[2], nav_black, nav_white);
     }
-    else if (food_top <= window.scrollY &&
-        window.scrollY <= document.documentElement.scrollHeight - window.innerHeight - navbar.clientHeight) {
-        change_obj_color(nav_anchor_links[3], nav_black, nav_white);
-    }
     else {
-        change_obj_color(nav_anchor_links[4], nav_black, nav_white);
+        change_obj_color(nav_anchor_links[3], nav_black, nav_white);
     }
 }
 

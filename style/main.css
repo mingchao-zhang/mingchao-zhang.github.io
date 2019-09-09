@@ -51,7 +51,8 @@ body {
     grid-template-columns: 80%;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(-90deg, rgba(214, 234, 248), rgba(250, 215, 160));
+    background: linear-gradient(to left, #d6eaf8, #fad7a0);
+    /* background: linear-gradient(to bottom right,#7DCFB6,  #1D4E89); */
 }
 
 /*-----------------------------------------*/
@@ -182,6 +183,8 @@ nav ul li a:hover {
     object-fit: cover;
 }
 
+/*-----------------------------------------*/
+/* Resume */
 .resume_container {
     width: 180px;
     padding: 0.5rem;
@@ -209,94 +212,7 @@ nav ul li a:hover {
 }
 
 
-
-
-/*-----------------------------------------*/
-#project {
-    border-top: solid salmon;
-    padding-top: var(--navbar_small_height);
-    background: white;
-    z-index: 0;
-    height: 100vh;
-    overflow: auto;
-}
-
-.section_title {    
-    padding-top: 10px;
-    color: #AED6F1;
-    /* color:var(--watermelon_red); */
-    font-size: 40px;
-    text-align: center;
-    justify-content: center;
-}
-
-.section_title_underline {
-    width: 250px;
-    border-color: var(--vista_blue);
-    border: solid 2px;
-    margin: 2px auto;
-}
-
-.project_container {
-    width: 70vw;
-    margin: 0 auto;
-    
-}
-
-.project_item {
-    border-radius: 20px;
-    position: relative;
-    margin: 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-}
-
-
-.project_item img {
-    display: block;
-    border-radius: 20px;
-    width: 100%;
-    overflow: hidden;
-    transition: opacity 2s;
-}
-
-.project_item:hover img {
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-.project_item_text {
-    width: 100%;
-    position: absolute;
-    bottom: 1%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    color: white;
-    text-align: left;
-    padding-left: 10px;
-    font-family: sans-serif;
-    font-weight: 100;
-    opacity: 0;
-    transition: opacity 2s;
-}
-
-.project_item:hover .project_item_text {
-    opacity: 1;
-}
-
-@media screen and (min-width: 900px) {
-    .project_container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .project_container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
+/* Could be useful in the future */
 .modal {
     display: none;
     position: fixed;
@@ -396,15 +312,6 @@ nav ul li a:hover {
     border-radius: 15px;
     z-index: 100;
 }
-/*
-#nature_front_image4 img {
-    display: block;
-    opacity: 1;
-    transition: inherit;
-}
-*/
-
-
 
 .arrow {
     transition: all 1s ease-in-out;
@@ -482,7 +389,7 @@ nav ul li a:hover {
     border-top: solid salmon;
     padding-top: 20px;
     height: 200px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
