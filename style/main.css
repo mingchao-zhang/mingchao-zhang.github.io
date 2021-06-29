@@ -51,7 +51,7 @@ body {
     grid-template-columns: 80%;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to left, #d6eaf8, #fad7a0);
+    /* background: linear-gradient(to left, #d6eaf8, #fad7a0); */
     /* background: linear-gradient(to bottom right,#7DCFB6,  #1D4E89); */
 }
 
